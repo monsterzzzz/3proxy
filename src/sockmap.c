@@ -11,7 +11,7 @@
 #ifdef WITHSPLICE
 
 #include <fcntl.h>
-ssize_t splice(int fd_in, loff_t *off_in, int fd_out, loff_t *off_out, size_t len, unsigned int flags);
+ssize_t splice(int fd_in, off_t *off_in, int fd_out, off_t *off_out, size_t len, unsigned int flags);
 #ifndef SPLICE_F_MOVE
 #define SPLICE_F_MOVE           0x01
 #endif
